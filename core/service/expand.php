@@ -3,7 +3,7 @@
 *自定义关键字引用功能
 */
 define('IS_STATIC',true);
-define('SITE_PATH',"http://img1.pinyouc.com/");
+define('SITE_PATH',"http://127.0.0.1/");
 
 function PAGE($route,$args)
 {
@@ -33,7 +33,7 @@ function PAGE($route,$args)
  */
 function images($url,$param,$width = 0,$height = 0)
 {
-    $default_src = "http://www.pinyouc.com/upload/noavatar/image.gif";
+    $default_src = "./upload/noavatar/image.gif";
     $html = "<img src='{$default_src}' #param# original='#img#' >";
     if(file_exists($url))
     {
