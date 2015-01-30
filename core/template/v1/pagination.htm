@@ -1,0 +1,19 @@
+
+<?php if(page['page_count'] > 1) { ?>
+<div class="pages pagination">
+    <?php if($page['page'] > 1) { ?>
+    <a href="<?php echo $page[page_prev]; ?>" class="page_prev" page="<?php echo $page[prev_page]; ?>">上一页</a>
+    <?php } ?>
+    <?php foreach($page['page_nums'] $page_num) { ?>
+    <?php if($page['page'] == $page_num['name']) { ?>
+    <a class="c"><?php echo $page_num[name]; ?></a>
+    <?php elseif($page_num['name'] == '...') { ?>
+    <i>...</i>
+    <?php }else{ ?>
+    <a href="<?php echo $page_num[url]; ?>" page="<?php echo $page_num[name]; ?>"><?php echo $page_num[name]; ?></a>
+    <?php }} ?>
+    <?php if($page['page'] < $page['page_count']) { ?>
+    <a href="<?php echo $page[page_next]; ?>"  class="page_next" page="<?php echo $page[next_page]; ?>">下一页</a>
+    <?php } ?>
+</div>
+<?php } ?>

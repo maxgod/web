@@ -1,0 +1,35 @@
+.pagination {
+    text-align: center;
+    overflow: hidden;
+    zoom: 1;
+    clear: both;
+    padding-top: 15px;
+}
+.pagination a, .pagination i {
+    font-size: 12px;
+    border: 1px solid #EBEBEB;
+    background-color: #fff;
+    display: inline-block;
+    margin: 0 1px;
+    white-space: nowrap;
+    min-width: 12px;
+    _width: 12px;
+    height: 30px;
+    line-height: 30px;
+    color: #666;
+    text-align: center;
+    -moz-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    font-weight: bold;
+    padding: 0 10px;
+}
+.pagination a:hover{
+    color: #FF0000;
+}
+.pagination a.c {
+    color: #000;
+    background-color: #efefef;
+    border: 1px solid #ccc;
+}
